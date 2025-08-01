@@ -1,0 +1,32 @@
+# 01_config/config.yaml
+
+domain: "electric vehicle charging stations"
+use_case: "question_answering"
+
+base_model: "EleutherAI/gpt-neo-125M"
+
+data_sources:
+  websites:
+    - "https://chargefinder.com/en/cairo/charging-station/7zex3x"
+    - "https://www.electromaps.com/en/charging-stations/egypt"
+    - "https://www.plugshare.com/"
+    - "https://afdc.energy.gov/fuels/electricity-locations"
+    - "https://chargehub.com/en/electric-car-charging-guide.html"
+  pdfs:
+    - "./data/pdfs/IRJET-V11I7133.pdf"
+    - "./data/pdfs/EV Forecast Infrastructure Report.pdf"
+    - "./data/pdfs/electric_vehicle_charging_infrastructure_trends_first_quarter_2024.pdf"
+    - "./data/pdfs/gao-25-106992.pdf"
+    - "./data/pdfs/ID-89-Chargers-2032_final-v2.pdf"
+
+output:
+  raw_dir: "./output/raw/"
+  clean_dir: "./output/clean/"
+  dataset_dir: "./output/dataset/"
+  models_dir: "./output/models/"
+  logs_dir: "./output/logs/"
+
+generation:
+  qa_model: Qwen/Qwen2.5-7B-Instruct
+  max_tokens: 512
+  temperature: 0.7
