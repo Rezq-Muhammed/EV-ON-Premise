@@ -146,7 +146,7 @@ git commit -m "Initial commit"
 2. Push to GitHub:
 
 ```bash
-git remote add origin https://github.com/yourusername/llm-finetune-pipeline.git
+git remote add origin https://github.com/Rezq-Muhammed/EV-ON-Premise.git
 git push -u origin main
 ```
 
