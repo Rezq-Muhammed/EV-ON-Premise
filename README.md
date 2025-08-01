@@ -73,7 +73,7 @@ FASTAPI_API_KEY=your_fastapi_key_here
 ### Step 1: Data Collection
 
 ```bash
-python 02_data_collection/scrape.py
+python 02_data_collection/scrape.py        # Alternative way to scrap web data by using crawl4ai that produces markdown outputs which is best practice for LLMs.
 python 02_data_collection/pdf_extract.py
 ```
 
