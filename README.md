@@ -86,8 +86,8 @@ python 03_data_processing/clean.py
 ### Step 3: Dataset Creation
 
 ```bash
-python 04_dataset_creation/augment.py        # Generating dataset using AzureOpenAI
-python 04_dataset_creation/augment-v2.py     # An alternative way to generate the dataset using an on-premise technique such as Qwen/Qwen2.5-7B-Instruct (you are able to use only of the two ways
+python 04_dataset_creation/augment.py        # Generating dataset using AzureOpenAI.
+python 04_dataset_creation/augment-v2.py     # An alternative way to generate the dataset using an on-premise technique such as Qwen/Qwen2.5-7B-Instruct (you are able to use only one of the two ways.
 ```
 
 ### Step 4: Fine‑Tuning
